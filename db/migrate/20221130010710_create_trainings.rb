@@ -4,8 +4,8 @@ class CreateTrainings < ActiveRecord::Migration[7.0]
       t.string :location
       t.float :distance
       t.time :duration
-      t.time :starthour
-      t.date :trainingdate
+      t.time :start_hour
+      t.date :training_date
       t.integer :feel
 
       t.timestamps
