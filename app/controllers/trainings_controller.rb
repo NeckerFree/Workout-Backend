@@ -3,7 +3,8 @@ class TrainingsController < ApplicationController
 
   # GET /trainings
   def index
-    @trainings = Training.all
+
+    @trainings = Training.where(user_id: params[:user_id])
 
     render json: @trainings
   end
